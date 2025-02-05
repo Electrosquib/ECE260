@@ -28,7 +28,7 @@ module lab2_3_1(
 );
     wire [0:3] carry;
     
-    adder ad1 (a, b, cin, s, cout);
+    adder1 ad1 (a, b, cin, s, cout);
     // adder ad2 (a[1], b[1], carry[0], s[1], carry[1]);
     // adder ad3 (a[2], b[2], carry[1], s[2], carry[2]);
     // adder ad4 (a[3], b[3], carry[2], s[3], cout);
@@ -36,7 +36,7 @@ module lab2_3_1(
 endmodule
 
 
-module adder(
+module adder1(
     input a,
     input b,
     input cin,

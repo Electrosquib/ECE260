@@ -38,19 +38,19 @@ module lab2_3_2(
     assign an = 4'b1110;
 
 
-    adder ads1 (a[0], b[0], cin, sum[0], carry[0]);
-    adder ads2 (a[1], b[1], carry[0], sum[1], carry[1]);
-    adder ads3 (a[2], b[2], carry[1], sum[2], carry[2]);
-    adder ads4 (a[3], b[3], carry[2], sum[3], cout);
+    adder2 ads1 (a[0], b[0], cin, sum[0], carry[0]);
+    adder2 ads2 (a[1], b[1], carry[0], sum[1], carry[1]);
+    adder2 ads3 (a[2], b[2], carry[1], sum[2], carry[2]);
+    adder2 ads4 (a[3], b[3], carry[2], sum[3], cout);
 
 
-    comparator comp1(sum, comp_result);
+    comparator1 comp1(sum, comp_result);
     assign z = comp_result;
 
-    adder ad1 (sum[0], 1'b0, 1'b0, add6[0], carry2[0]);
-    adder ad2 (sum[1], 1'b1, carry2[0], add6[1], carry2[1]);
-    adder ad3 (sum[2], 1'b1, carry2[1], add6[2], carry2[2]);
-    adder ad4 (sum[3], 1'b0, carry2[2], add6[3], carry2[3]);
+    adder2 ad1 (sum[0], 1'b0, 1'b0, add6[0], carry2[0]);
+    adder2 ad2 (sum[1], 1'b1, carry2[0], add6[1], carry2[1]);
+    adder2 ad3 (sum[2], 1'b1, carry2[1], add6[2], carry2[2]);
+    adder2 ad4 (sum[3], 1'b0, carry2[2], add6[3], carry2[3]);
 
     
     assign res[0] = (~comp_result & sum[0]) | (comp_result & add6[0]);
@@ -58,12 +58,12 @@ module lab2_3_2(
     assign res[2] = (~comp_result & sum[2]) | (comp_result & add6[2]);
     assign res[3] = (~comp_result & sum[3]) | (comp_result & add6[3]);
 
-    sevseg s1 (res, seg);
+    sevseg1 s1 (res, seg);
 
 endmodule
 
 
-module adder(
+module adder2(
     input a,
     input b,
     input cin,
@@ -77,7 +77,7 @@ module adder(
     
 endmodule
 
-module comparator(
+module comparator1(
     input [0:3] x,
     output out
 );
@@ -86,7 +86,7 @@ module comparator(
 endmodule
 
 
-module sevseg(
+module sevseg1(
     input [0:3] x,
     output reg [6:0] seg
     );
