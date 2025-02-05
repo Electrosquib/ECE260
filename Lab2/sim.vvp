@@ -7,258 +7,147 @@
 :vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/vhdl_textio.vpi";
 :vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/v2005_math.vpi";
 :vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/va_math.vpi";
-S_0x11e904170 .scope module, "testbench" "testbench" 2 15;
- .timescale -9 -9;
-v0x11e916a70_0 .var "correct_string", 400 0;
-v0x11e916b00_0 .var "e_y", 5 0;
-v0x11e916b90_0 .var "incorrect_string", 400 0;
-v0x11e916c20_0 .var "input_string", 400 0;
-v0x11e916cc0_0 .var "x", 3 0;
-v0x11e916da0_0 .net "y", 4 0, L_0x11e9191d0;  1 drivers
-S_0x11e9042f0 .scope module, "DUT" "lab2_2_2" 2 25, 3 22 0, S_0x11e904170;
+S_0x129604170 .scope module, "testbench" "testbench" 2 19;
  .timescale -9 -12;
-    .port_info 0 /INPUT 4 "x";
-    .port_info 1 /OUTPUT 5 "y";
-v0x11e904500_0 .net *"_ivl_10", 0 0, L_0x11e9171f0;  1 drivers
-L_0x110040058 .functor BUFT 1, C4<11000>, C4<0>, C4<0>, C4<0>;
-v0x11e9145b0_0 .net/2u *"_ivl_12", 4 0, L_0x110040058;  1 drivers
-L_0x1100400a0 .functor BUFT 1, C4<0001>, C4<0>, C4<0>, C4<0>;
-v0x11e914650_0 .net/2u *"_ivl_14", 3 0, L_0x1100400a0;  1 drivers
-v0x11e914700_0 .net *"_ivl_16", 0 0, L_0x11e917340;  1 drivers
-L_0x1100400e8 .functor BUFT 1, C4<10100>, C4<0>, C4<0>, C4<0>;
-v0x11e9147a0_0 .net/2u *"_ivl_18", 4 0, L_0x1100400e8;  1 drivers
-L_0x110040130 .functor BUFT 1, C4<0010>, C4<0>, C4<0>, C4<0>;
-v0x11e914890_0 .net/2u *"_ivl_20", 3 0, L_0x110040130;  1 drivers
-v0x11e914940_0 .net *"_ivl_22", 0 0, L_0x11e917480;  1 drivers
-L_0x110040178 .functor BUFT 1, C4<01100>, C4<0>, C4<0>, C4<0>;
-v0x11e9149e0_0 .net/2u *"_ivl_24", 4 0, L_0x110040178;  1 drivers
-L_0x1100401c0 .functor BUFT 1, C4<0011>, C4<0>, C4<0>, C4<0>;
-v0x11e914a90_0 .net/2u *"_ivl_26", 3 0, L_0x1100401c0;  1 drivers
-v0x11e914ba0_0 .net *"_ivl_28", 0 0, L_0x11e917660;  1 drivers
-L_0x110040208 .functor BUFT 1, C4<01001>, C4<0>, C4<0>, C4<0>;
-v0x11e914c40_0 .net/2u *"_ivl_30", 4 0, L_0x110040208;  1 drivers
-L_0x110040250 .functor BUFT 1, C4<0100>, C4<0>, C4<0>, C4<0>;
-v0x11e914cf0_0 .net/2u *"_ivl_32", 3 0, L_0x110040250;  1 drivers
-v0x11e914da0_0 .net *"_ivl_34", 0 0, L_0x11e9177c0;  1 drivers
-L_0x110040298 .functor BUFT 1, C4<01010>, C4<0>, C4<0>, C4<0>;
-v0x11e914e40_0 .net/2u *"_ivl_36", 4 0, L_0x110040298;  1 drivers
-L_0x1100402e0 .functor BUFT 1, C4<0101>, C4<0>, C4<0>, C4<0>;
-v0x11e914ef0_0 .net/2u *"_ivl_38", 3 0, L_0x1100402e0;  1 drivers
-v0x11e914fa0_0 .net *"_ivl_40", 0 0, L_0x11e9178d0;  1 drivers
-L_0x110040328 .functor BUFT 1, C4<00110>, C4<0>, C4<0>, C4<0>;
-v0x11e915040_0 .net/2u *"_ivl_42", 4 0, L_0x110040328;  1 drivers
-L_0x110040370 .functor BUFT 1, C4<0110>, C4<0>, C4<0>, C4<0>;
-v0x11e9151d0_0 .net/2u *"_ivl_44", 3 0, L_0x110040370;  1 drivers
-v0x11e915260_0 .net *"_ivl_46", 0 0, L_0x11e9179d0;  1 drivers
-L_0x1100403b8 .functor BUFT 1, C4<10001>, C4<0>, C4<0>, C4<0>;
-v0x11e915300_0 .net/2u *"_ivl_48", 4 0, L_0x1100403b8;  1 drivers
-L_0x110040400 .functor BUFT 1, C4<0111>, C4<0>, C4<0>, C4<0>;
-v0x11e9153b0_0 .net/2u *"_ivl_50", 3 0, L_0x110040400;  1 drivers
-v0x11e915460_0 .net *"_ivl_52", 0 0, L_0x11e917b30;  1 drivers
-L_0x110040448 .functor BUFT 1, C4<01001>, C4<0>, C4<0>, C4<0>;
-v0x11e915500_0 .net/2u *"_ivl_54", 4 0, L_0x110040448;  1 drivers
-L_0x110040490 .functor BUFT 1, C4<1000>, C4<0>, C4<0>, C4<0>;
-v0x11e9155b0_0 .net/2u *"_ivl_56", 3 0, L_0x110040490;  1 drivers
-v0x11e915660_0 .net *"_ivl_58", 0 0, L_0x11e917d30;  1 drivers
-L_0x1100404d8 .functor BUFT 1, C4<00101>, C4<0>, C4<0>, C4<0>;
-v0x11e915700_0 .net/2u *"_ivl_60", 4 0, L_0x1100404d8;  1 drivers
-L_0x110040520 .functor BUFT 1, C4<1001>, C4<0>, C4<0>, C4<0>;
-v0x11e9157b0_0 .net/2u *"_ivl_62", 3 0, L_0x110040520;  1 drivers
-v0x11e915860_0 .net *"_ivl_64", 0 0, L_0x11e917e60;  1 drivers
-L_0x110040568 .functor BUFT 1, C4<00011>, C4<0>, C4<0>, C4<0>;
-v0x11e915900_0 .net/2u *"_ivl_66", 4 0, L_0x110040568;  1 drivers
-L_0x1100405b0 .functor BUFT 1, C4<00000>, C4<0>, C4<0>, C4<0>;
-v0x11e9159b0_0 .net/2u *"_ivl_68", 4 0, L_0x1100405b0;  1 drivers
-v0x11e915a60_0 .net *"_ivl_70", 4 0, L_0x11e917f00;  1 drivers
-v0x11e915b10_0 .net *"_ivl_72", 4 0, L_0x11e9180c0;  1 drivers
-v0x11e915bc0_0 .net *"_ivl_74", 4 0, L_0x11e918220;  1 drivers
-v0x11e9150f0_0 .net *"_ivl_76", 4 0, L_0x11e918380;  1 drivers
-v0x11e915e50_0 .net *"_ivl_78", 4 0, L_0x11e9184a0;  1 drivers
-L_0x110040010 .functor BUFT 1, C4<0000>, C4<0>, C4<0>, C4<0>;
-v0x11e915ee0_0 .net/2u *"_ivl_8", 3 0, L_0x110040010;  1 drivers
-v0x11e915f80_0 .net *"_ivl_80", 4 0, L_0x11e918600;  1 drivers
-v0x11e916030_0 .net *"_ivl_82", 4 0, L_0x11e918720;  1 drivers
-v0x11e9160e0_0 .net *"_ivl_84", 4 0, L_0x11e918870;  1 drivers
-v0x11e916190_0 .net *"_ivl_86", 4 0, L_0x11e9189d0;  1 drivers
-v0x11e916240_0 .net *"_ivl_91", 0 0, L_0x11e918c90;  1 drivers
-v0x11e9162f0_0 .net *"_ivl_93", 0 0, L_0x11e918e40;  1 drivers
-v0x11e9163a0_0 .net *"_ivl_95", 0 0, L_0x11e918a70;  1 drivers
-v0x11e916450_0 .net *"_ivl_97", 0 0, L_0x11e919040;  1 drivers
-v0x11e916500_0 .net *"_ivl_99", 0 0, L_0x11e918d30;  1 drivers
-v0x11e9165b0_0 .net "a", 0 0, L_0x11e916e50;  1 drivers
-v0x11e916650_0 .net "b", 0 0, L_0x11e916f50;  1 drivers
-v0x11e9166f0_0 .net "c", 0 0, L_0x11e916ff0;  1 drivers
-v0x11e916790_0 .net "d", 0 0, L_0x11e917150;  1 drivers
-v0x11e916830_0 .net "i", 4 0, L_0x11e918b70;  1 drivers
-v0x11e9168e0_0 .net "x", 3 0, v0x11e916cc0_0;  1 drivers
-v0x11e916990_0 .net "y", 0 4, L_0x11e9191d0;  alias, 1 drivers
-L_0x11e916e50 .part v0x11e916cc0_0, 0, 1;
-L_0x11e916f50 .part v0x11e916cc0_0, 1, 1;
-L_0x11e916ff0 .part v0x11e916cc0_0, 2, 1;
-L_0x11e917150 .part v0x11e916cc0_0, 3, 1;
-L_0x11e9171f0 .cmp/eq 4, v0x11e916cc0_0, L_0x110040010;
-L_0x11e917340 .cmp/eq 4, v0x11e916cc0_0, L_0x1100400a0;
-L_0x11e917480 .cmp/eq 4, v0x11e916cc0_0, L_0x110040130;
-L_0x11e917660 .cmp/eq 4, v0x11e916cc0_0, L_0x1100401c0;
-L_0x11e9177c0 .cmp/eq 4, v0x11e916cc0_0, L_0x110040250;
-L_0x11e9178d0 .cmp/eq 4, v0x11e916cc0_0, L_0x1100402e0;
-L_0x11e9179d0 .cmp/eq 4, v0x11e916cc0_0, L_0x110040370;
-L_0x11e917b30 .cmp/eq 4, v0x11e916cc0_0, L_0x110040400;
-L_0x11e917d30 .cmp/eq 4, v0x11e916cc0_0, L_0x110040490;
-L_0x11e917e60 .cmp/eq 4, v0x11e916cc0_0, L_0x110040520;
-L_0x11e917f00 .functor MUXZ 5, L_0x1100405b0, L_0x110040568, L_0x11e917e60, C4<>;
-L_0x11e9180c0 .functor MUXZ 5, L_0x11e917f00, L_0x1100404d8, L_0x11e917d30, C4<>;
-L_0x11e918220 .functor MUXZ 5, L_0x11e9180c0, L_0x110040448, L_0x11e917b30, C4<>;
-L_0x11e918380 .functor MUXZ 5, L_0x11e918220, L_0x1100403b8, L_0x11e9179d0, C4<>;
-L_0x11e9184a0 .functor MUXZ 5, L_0x11e918380, L_0x110040328, L_0x11e9178d0, C4<>;
-L_0x11e918600 .functor MUXZ 5, L_0x11e9184a0, L_0x110040298, L_0x11e9177c0, C4<>;
-L_0x11e918720 .functor MUXZ 5, L_0x11e918600, L_0x110040208, L_0x11e917660, C4<>;
-L_0x11e918870 .functor MUXZ 5, L_0x11e918720, L_0x110040178, L_0x11e917480, C4<>;
-L_0x11e9189d0 .functor MUXZ 5, L_0x11e918870, L_0x1100400e8, L_0x11e917340, C4<>;
-L_0x11e918b70 .functor MUXZ 5, L_0x11e9189d0, L_0x110040058, L_0x11e9171f0, C4<>;
-L_0x11e918c90 .part L_0x11e918b70, 0, 1;
-L_0x11e918e40 .part L_0x11e918b70, 1, 1;
-L_0x11e918a70 .part L_0x11e918b70, 2, 1;
-L_0x11e919040 .part L_0x11e918b70, 3, 1;
-L_0x11e918d30 .part L_0x11e918b70, 4, 1;
-LS_0x11e9191d0_0_0 .concat [ 1 1 1 1], L_0x11e918d30, L_0x11e919040, L_0x11e918a70, L_0x11e918e40;
-LS_0x11e9191d0_0_4 .concat [ 1 0 0 0], L_0x11e918c90;
-L_0x11e9191d0 .concat [ 4 1 0 0], LS_0x11e9191d0_0_0, LS_0x11e9191d0_0_4;
-    .scope S_0x11e904170;
+v0x129615170_0 .var "a", 0 0;
+v0x129615240_0 .var "b", 0 0;
+v0x129615310_0 .var "cin", 0 0;
+v0x1296153e0_0 .var "correct_string", 400 0;
+v0x129615470_0 .net "cout", 0 0, L_0x129615d40;  1 drivers
+v0x129615580_0 .var/i "i", 31 0;
+v0x129615610_0 .var "incorrect_string", 400 0;
+v0x1296156a0_0 .var "input_string", 400 0;
+v0x129615730_0 .var "inputs", 2 0;
+v0x129615840_0 .net "s", 0 0, L_0x1296159f0;  1 drivers
+v0x1296158d0_0 .var "sum_o", 1 0;
+S_0x1296042f0 .scope module, "DUT" "lab2_3_1" 2 34, 3 22 0, S_0x129604170;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /INPUT 1 "cin";
+    .port_info 3 /OUTPUT 1 "s";
+    .port_info 4 /OUTPUT 1 "cout";
+v0x129614dd0_0 .net "a", 0 0, v0x129615170_0;  1 drivers
+v0x129614e80_0 .net "b", 0 0, v0x129615240_0;  1 drivers
+v0x129614f10_0 .net "cin", 0 0, v0x129615310_0;  1 drivers
+v0x129614fc0_0 .net "cout", 0 0, L_0x129615d40;  alias, 1 drivers
+v0x129615070_0 .net "s", 0 0, L_0x1296159f0;  alias, 1 drivers
+S_0x129604570 .scope module, "ad1" "adder" 3 31, 3 39 0, S_0x1296042f0;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /INPUT 1 "cin";
+    .port_info 3 /OUTPUT 1 "s";
+    .port_info 4 /OUTPUT 1 "cout";
+L_0x129615960 .functor XOR 1, v0x129615170_0, v0x129615240_0, C4<0>, C4<0>;
+L_0x1296159f0 .functor XOR 1, L_0x129615960, v0x129615310_0, C4<0>, C4<0>;
+L_0x129615ac0 .functor AND 1, v0x129615170_0, v0x129615240_0, C4<1>, C4<1>;
+L_0x129615c50 .functor AND 1, L_0x129615960, v0x129615310_0, C4<1>, C4<1>;
+L_0x129615d40 .functor OR 1, L_0x129615ac0, L_0x129615c50, C4<0>, C4<0>;
+v0x1296047f0_0 .net *"_ivl_4", 0 0, L_0x129615ac0;  1 drivers
+v0x1296148b0_0 .net *"_ivl_6", 0 0, L_0x129615c50;  1 drivers
+v0x129614950_0 .net "a", 0 0, v0x129615170_0;  alias, 1 drivers
+v0x129614a00_0 .net "b", 0 0, v0x129615240_0;  alias, 1 drivers
+v0x129614a90_0 .net "cin", 0 0, v0x129615310_0;  alias, 1 drivers
+v0x129614b70_0 .net "cout", 0 0, L_0x129615d40;  alias, 1 drivers
+v0x129614c10_0 .net "s", 0 0, L_0x1296159f0;  alias, 1 drivers
+v0x129614cb0_0 .net "xor1", 0 0, L_0x129615960;  1 drivers
+    .scope S_0x129604170;
 T_0 ;
-    %pushi/vec4 0, 0, 4;
-    %store/vec4 v0x11e916cc0_0, 0, 4;
-    %pushi/vec4 3, 0, 6;
-    %store/vec4 v0x11e916b00_0, 0, 6;
-    %delay 10000, 0;
-    %vpi_call 2 32 "$sformat", v0x11e916c20_0, "Input: x = %b", v0x11e916cc0_0 {0 0 0};
-    %vpi_call 2 34 "$sformat", v0x11e916a70_0, "LED output should be %b and actually", v0x11e916b00_0 {0 0 0};
-    %vpi_call 2 35 "$sformat", v0x11e916b90_0, "LED output should be %b", v0x11e916b00_0 {0 0 0};
-    %vpi_call 2 37 "$write", "\012TIME: " {0 0 0};
-    %vpi_call 2 37 "$write", $realtime {0 0 0};
-    %load/vec4 v0x11e916da0_0;
-    %pad/u 6;
-    %load/vec4 v0x11e916b00_0;
-    %cmp/e;
-    %jmp/0xz  T_0.0, 4;
-    %vpi_call 2 39 "$display", "   PASSED:   " {0 0 0};
-    %jmp T_0.1;
+    %pushi/vec4 0, 0, 3;
+    %store/vec4 v0x129615730_0, 0, 3;
+    %pushi/vec4 0, 0, 32;
+    %store/vec4 v0x129615580_0, 0, 32;
 T_0.0 ;
-    %vpi_call 2 41 "$display", " ** FAILED:   " {0 0 0};
-    %load/vec4 v0x11e916b90_0;
-    %cmpi/ne 0, 0, 401;
+    %load/vec4 v0x129615580_0;
+    %cmpi/s 8, 0, 32;
+    %jmp/0xz T_0.1, 5;
+    %load/vec4 v0x129615730_0;
+    %parti/s 1, 2, 3;
+    %store/vec4 v0x129615170_0, 0, 1;
+    %load/vec4 v0x129615730_0;
+    %parti/s 1, 1, 2;
+    %store/vec4 v0x129615240_0, 0, 1;
+    %load/vec4 v0x129615730_0;
+    %parti/s 1, 0, 2;
+    %store/vec4 v0x129615310_0, 0, 1;
+    %load/vec4 v0x129615170_0;
+    %pad/u 2;
+    %load/vec4 v0x129615240_0;
+    %pad/u 2;
+    %add;
+    %load/vec4 v0x129615310_0;
+    %pad/u 2;
+    %add;
+    %store/vec4 v0x1296158d0_0, 0, 2;
+    %delay 50000, 0;
+    %vpi_call 2 46 "$sformat", v0x1296156a0_0, "inputs: a = %b, b = %b, cin = %b", v0x129615170_0, v0x129615240_0, v0x129615310_0 {0 0 0};
+    %vpi_call 2 47 "$sformat", v0x1296153e0_0, "Output sum bit should be %b and actually", &PV<v0x1296158d0_0, 0, 1> {0 0 0};
+    %vpi_call 2 48 "$sformat", v0x129615610_0, "Output sum bit should be %b", &PV<v0x1296158d0_0, 0, 1> {0 0 0};
+    %vpi_call 2 50 "$write", "\012TIME: " {0 0 0};
+    %vpi_call 2 50 "$write", $realtime {0 0 0};
+    %load/vec4 v0x129615840_0;
+    %load/vec4 v0x1296158d0_0;
+    %parti/s 1, 0, 2;
+    %cmp/e;
     %jmp/0xz  T_0.2, 4;
-    %vpi_call 2 42 "$display", "TEST: %s", v0x11e916b90_0 {0 0 0};
+    %vpi_call 2 52 "$display", "   PASSED:   " {0 0 0};
+    %jmp T_0.3;
 T_0.2 ;
-T_0.1 ;
-    %vpi_call 2 44 "$write", "%s = ", v0x11e916a70_0, "%b", v0x11e916da0_0 {0 0 0};
-    %vpi_call 2 45 "$write", ", EXPECTED: ", "%b", v0x11e916b00_0 {0 0 0};
-    %load/vec4 v0x11e916c20_0;
+    %vpi_call 2 54 "$display", " ** FAILED:   " {0 0 0};
+    %load/vec4 v0x129615610_0;
     %cmpi/ne 0, 0, 401;
     %jmp/0xz  T_0.4, 4;
-    %vpi_call 2 46 "$display", " WITH: %s", v0x11e916c20_0 {0 0 0};
+    %vpi_call 2 55 "$display", "TEST: %s", v0x129615610_0 {0 0 0};
 T_0.4 ;
-    %pushi/vec4 5, 0, 4;
-    %store/vec4 v0x11e916cc0_0, 0, 4;
-    %pushi/vec4 12, 0, 6;
-    %store/vec4 v0x11e916b00_0, 0, 6;
-    %delay 10000, 0;
-    %vpi_call 2 43 "$sformat", v0x11e916c20_0, "Input: x = %b", v0x11e916cc0_0 {0 0 0};
-    %vpi_call 2 45 "$sformat", v0x11e916a70_0, "LED output should be %b and actually", v0x11e916b00_0 {0 0 0};
-    %vpi_call 2 46 "$sformat", v0x11e916b90_0, "LED output should be %b", v0x11e916b00_0 {0 0 0};
-    %vpi_call 2 48 "$write", "\012TIME: " {0 0 0};
-    %vpi_call 2 48 "$write", $realtime {0 0 0};
-    %load/vec4 v0x11e916da0_0;
-    %pad/u 6;
-    %load/vec4 v0x11e916b00_0;
-    %cmp/e;
-    %jmp/0xz  T_0.6, 4;
-    %vpi_call 2 50 "$display", "   PASSED:   " {0 0 0};
-    %jmp T_0.7;
-T_0.6 ;
-    %vpi_call 2 52 "$display", " ** FAILED:   " {0 0 0};
-    %load/vec4 v0x11e916b90_0;
+T_0.3 ;
+    %vpi_call 2 57 "$write", "%s = ", v0x1296153e0_0, "%b", v0x129615840_0 {0 0 0};
+    %vpi_call 2 58 "$write", ", EXPECTED: ", "%b", &PV<v0x1296158d0_0, 0, 1> {0 0 0};
+    %load/vec4 v0x1296156a0_0;
     %cmpi/ne 0, 0, 401;
+    %jmp/0xz  T_0.6, 4;
+    %vpi_call 2 59 "$display", " WITH: %s", v0x1296156a0_0 {0 0 0};
+T_0.6 ;
+    %vpi_call 2 51 "$sformat", v0x1296153e0_0, "Output overflow c_out bit should be %b and actually", &PV<v0x1296158d0_0, 1, 1> {0 0 0};
+    %vpi_call 2 52 "$sformat", v0x129615610_0, "Output overflow c_out bit should be %b", &PV<v0x1296158d0_0, 1, 1> {0 0 0};
+    %vpi_call 2 54 "$write", "\012TIME: " {0 0 0};
+    %vpi_call 2 54 "$write", $realtime {0 0 0};
+    %load/vec4 v0x129615470_0;
+    %load/vec4 v0x1296158d0_0;
+    %parti/s 1, 1, 2;
+    %cmp/e;
     %jmp/0xz  T_0.8, 4;
-    %vpi_call 2 53 "$display", "TEST: %s", v0x11e916b90_0 {0 0 0};
+    %vpi_call 2 56 "$display", "   PASSED:   " {0 0 0};
+    %jmp T_0.9;
 T_0.8 ;
-T_0.7 ;
-    %vpi_call 2 55 "$write", "%s = ", v0x11e916a70_0, "%b", v0x11e916da0_0 {0 0 0};
-    %vpi_call 2 56 "$write", ", EXPECTED: ", "%b", v0x11e916b00_0 {0 0 0};
-    %load/vec4 v0x11e916c20_0;
+    %vpi_call 2 58 "$display", " ** FAILED:   " {0 0 0};
+    %load/vec4 v0x129615610_0;
     %cmpi/ne 0, 0, 401;
     %jmp/0xz  T_0.10, 4;
-    %vpi_call 2 57 "$display", " WITH: %s", v0x11e916c20_0 {0 0 0};
+    %vpi_call 2 59 "$display", "TEST: %s", v0x129615610_0 {0 0 0};
 T_0.10 ;
-    %pushi/vec4 2, 0, 4;
-    %store/vec4 v0x11e916cc0_0, 0, 4;
-    %pushi/vec4 6, 0, 6;
-    %store/vec4 v0x11e916b00_0, 0, 6;
-    %delay 10000, 0;
-    %vpi_call 2 54 "$sformat", v0x11e916c20_0, "Input: x = %b", v0x11e916cc0_0 {0 0 0};
-    %vpi_call 2 56 "$sformat", v0x11e916a70_0, "LED output should be %b and actually", v0x11e916b00_0 {0 0 0};
-    %vpi_call 2 57 "$sformat", v0x11e916b90_0, "LED output should be %b", v0x11e916b00_0 {0 0 0};
-    %vpi_call 2 59 "$write", "\012TIME: " {0 0 0};
-    %vpi_call 2 59 "$write", $realtime {0 0 0};
-    %load/vec4 v0x11e916da0_0;
-    %pad/u 6;
-    %load/vec4 v0x11e916b00_0;
-    %cmp/e;
+T_0.9 ;
+    %vpi_call 2 61 "$write", "%s = ", v0x1296153e0_0, "%b", v0x129615470_0 {0 0 0};
+    %vpi_call 2 62 "$write", ", EXPECTED: ", "%b", &PV<v0x1296158d0_0, 1, 1> {0 0 0};
+    %load/vec4 v0x1296156a0_0;
+    %cmpi/ne 0, 0, 401;
     %jmp/0xz  T_0.12, 4;
-    %vpi_call 2 61 "$display", "   PASSED:   " {0 0 0};
-    %jmp T_0.13;
+    %vpi_call 2 63 "$display", " WITH: %s", v0x1296156a0_0 {0 0 0};
 T_0.12 ;
-    %vpi_call 2 63 "$display", " ** FAILED:   " {0 0 0};
-    %load/vec4 v0x11e916b90_0;
-    %cmpi/ne 0, 0, 401;
-    %jmp/0xz  T_0.14, 4;
-    %vpi_call 2 64 "$display", "TEST: %s", v0x11e916b90_0 {0 0 0};
-T_0.14 ;
-T_0.13 ;
-    %vpi_call 2 66 "$write", "%s = ", v0x11e916a70_0, "%b", v0x11e916da0_0 {0 0 0};
-    %vpi_call 2 67 "$write", ", EXPECTED: ", "%b", v0x11e916b00_0 {0 0 0};
-    %load/vec4 v0x11e916c20_0;
-    %cmpi/ne 0, 0, 401;
-    %jmp/0xz  T_0.16, 4;
-    %vpi_call 2 68 "$display", " WITH: %s", v0x11e916c20_0 {0 0 0};
-T_0.16 ;
-    %pushi/vec4 9, 0, 4;
-    %store/vec4 v0x11e916cc0_0, 0, 4;
-    %pushi/vec4 24, 0, 6;
-    %store/vec4 v0x11e916b00_0, 0, 6;
-    %delay 10000, 0;
-    %vpi_call 2 65 "$sformat", v0x11e916c20_0, "Input: x = %b", v0x11e916cc0_0 {0 0 0};
-    %vpi_call 2 67 "$sformat", v0x11e916a70_0, "LED output should be %b and actually", v0x11e916b00_0 {0 0 0};
-    %vpi_call 2 68 "$sformat", v0x11e916b90_0, "LED output should be %b", v0x11e916b00_0 {0 0 0};
-    %vpi_call 2 70 "$write", "\012TIME: " {0 0 0};
-    %vpi_call 2 70 "$write", $realtime {0 0 0};
-    %load/vec4 v0x11e916da0_0;
-    %pad/u 6;
-    %load/vec4 v0x11e916b00_0;
-    %cmp/e;
-    %jmp/0xz  T_0.18, 4;
-    %vpi_call 2 72 "$display", "   PASSED:   " {0 0 0};
-    %jmp T_0.19;
-T_0.18 ;
-    %vpi_call 2 74 "$display", " ** FAILED:   " {0 0 0};
-    %load/vec4 v0x11e916b90_0;
-    %cmpi/ne 0, 0, 401;
-    %jmp/0xz  T_0.20, 4;
-    %vpi_call 2 75 "$display", "TEST: %s", v0x11e916b90_0 {0 0 0};
-T_0.20 ;
-T_0.19 ;
-    %vpi_call 2 77 "$write", "%s = ", v0x11e916a70_0, "%b", v0x11e916da0_0 {0 0 0};
-    %vpi_call 2 78 "$write", ", EXPECTED: ", "%b", v0x11e916b00_0 {0 0 0};
-    %load/vec4 v0x11e916c20_0;
-    %cmpi/ne 0, 0, 401;
-    %jmp/0xz  T_0.22, 4;
-    %vpi_call 2 79 "$display", " WITH: %s", v0x11e916c20_0 {0 0 0};
-T_0.22 ;
+    %delay 50000, 0;
+    %load/vec4 v0x129615730_0;
+    %addi 1, 0, 3;
+    %store/vec4 v0x129615730_0, 0, 3;
+    %load/vec4 v0x129615580_0;
+    %addi 1, 0, 32;
+    %store/vec4 v0x129615580_0, 0, 32;
+    %jmp T_0.0;
+T_0.1 ;
     %end;
     .thread T_0;
 # The file index is used to find the file name in the following table.
 :file_names 4;
     "N/A";
     "<interactive>";
-    "testbench_3.v";
-    "lab2_2_2.v";
+    "testbench_4.v";
+    "lab2_3_1.v";
