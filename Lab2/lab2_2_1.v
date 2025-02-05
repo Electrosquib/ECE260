@@ -19,10 +19,10 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-module lab2_2_1_partA(
+module lab2_2_1(
     input [3:0] v,
     output z,
-    output [3:0] m,
+  output [3:0] an,
     output reg [6:0] seg
 );
     wire comp_result;
@@ -32,16 +32,16 @@ module lab2_2_1_partA(
     comparator comp1(v, comp_result);
     assign z = comp_result;
     
-    adder ad1 (v[0], 0, 0, add6[0], carry[0]);
-    adder ad2 (v[1], 1, carry[0], add6[1], carry[1]);
-    adder ad3 (v[2], 1, carry[1], add6[2], carry[2]);
-    adder ad4 (v[3], 0, carry[2], add6[3], carry[3]);
+  adder ad1 (v[0], 1'b0, 1'b0, add6[0], carry[0]);
+  adder ad2 (v[1], 1'b1, carry[0], add6[1], carry[1]);
+  adder ad3 (v[2], 1'b1, carry[1], add6[2], carry[2]);
+  adder ad4 (v[3], 1'b0, carry[2], add6[3], carry[3]);
     
     
-    assign m[0] = (~comp_result & v[0]) | (comp_result & add6[0]);
-    assign m[1] = (~comp_result & v[1]) | (comp_result & add6[1]);
-    assign m[2] = (~comp_result & v[2]) | (comp_result & add6[2]);
-    assign m[3] = (~comp_result & v[3]) | (comp_result & add6[3]);
+    assign an[0] = (~comp_result & v[0]) | (comp_result & add6[0]);
+  	assign an[1] = (~comp_result & v[1]) | (comp_result & add6[1]);
+    assign an[2] = (~comp_result & v[2]) | (comp_result & add6[2]);
+    assign an[3] = (~comp_result & v[3]) | (comp_result & add6[3]);
 
 endmodule
 
