@@ -1,0 +1,30 @@
+**** module/scope: lab2_2_1
+     Flip-Flops   : 0
+     Logic Gates  : 16
+**** module/scope: lab2_2_1.ad1
+     Flip-Flops   : 0
+     Logic Gates  : 5
+**** module/scope: lab2_2_1.ad2
+     Flip-Flops   : 0
+     Logic Gates  : 5
+**** module/scope: lab2_2_1.ad3
+     Flip-Flops   : 0
+     Logic Gates  : 5
+**** module/scope: lab2_2_1.ad4
+     Flip-Flops   : 0
+     Logic Gates  : 5
+**** module/scope: lab2_2_1.comp1
+     Flip-Flops   : 0
+     Logic Gates  : 7
+**** module/scope: lab2_2_1.s1
+     Flip-Flops   : 0
+     Logic Gates  : 0
+     LPM[5]: 1 unaccounted
+     LOG[13]: 1 unaccounted
+     LOG[14]: 1 unaccounted
+**** TOTALS
+     Flip-Flops   : 0
+     Logic Gates  : 43
+     LPM[5]: 1 unaccounted
+     LOG[13]: 1 unaccounted
+     LOG[14]: 1 unaccounted
