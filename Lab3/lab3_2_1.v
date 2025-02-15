@@ -9,7 +9,6 @@ module lab3_2_1 (
 );
 
 always @(en_in_n or v) begin
-$display("en_in_n = %b    v = %b", en_in_n, v);
 if (en_in_n) begin
     y = 3'b111;
     gs = 1;
