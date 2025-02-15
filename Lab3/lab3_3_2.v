@@ -3,7 +3,7 @@
 module lab3_3_2(
     input [0:1] a,
     input [0:1] b,
-    output [0:3] prod
+    output [0:3] out
 
 );
     reg [3:0] ROM [15:0];
