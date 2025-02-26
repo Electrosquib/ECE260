@@ -9,8 +9,16 @@ module lab4_1_2 (
 task calc_even_parity;
     input [7:0] a;
     output p;
+    integer i;
+    reg [3:0] s;
+    begin
+        s = 0;
 
-    assign p = (a % 2);
+        for (i = 0; i < 8; i += 1) begin
+            s += a[i];
+        end
+        assign p = (s % 2);
+    end
 
     endtask
 
