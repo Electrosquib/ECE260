@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-module calc_even_parity_task (
+module lab4_1_2 (
     input [7:0] ain,
     output reg parity
 );    

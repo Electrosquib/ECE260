@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 
 
-module add_two_values_task (
+module lab4_1_1 (
     input [3:0] ain,
     input [3:0] bin,
     output reg cout,

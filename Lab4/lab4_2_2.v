@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 
 
-module calc_ones_function (
+module lab4_2_2 (
     input [7:0] ain,
     output reg [3:0] number_of_ones
 );
