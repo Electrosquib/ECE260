@@ -1,21 +1,21 @@
 `timescale 1ns / 1ps
 
-module lab5_2_2 (
+module D_latch_demo_behavior (
     input D,
-    input Clock,
+    input Clk,
     output reg Qa,
     output reg Qb,
     output reg Qc
-)
+);
     always @ (*) begin
-        if (Clock) 
+        if (Clk) 
             Qa = D;
     end
-    always @(posedge Clock) begin
-        Qb <= D
+    always @(posedge Clk) begin
+        Qb <= D;
     end
-    always @(negedge Clock) begin
-        Qc <= D
+    always @(negedge Clk) begin
+        Qc <= D;
     end
 
 endmodule

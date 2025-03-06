@@ -1,6 +1,6 @@
 `timescale 1ns/1ps
 
- module D_ff_with_ce_and_synch_reset_behavior(
+ module D_ff_with_ce_and_synch_reset_behavior (
     input D, 
     input Clk, 
     input reset,

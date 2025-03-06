@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-module lab5_2_3(input D, input Clk, input reset, output reg Q);
+module D_ff_with_synch_reset_behavior (input D, input Clk, input reset, output reg Q);
     always @(posedge Clk)
         if (reset)
         begin
