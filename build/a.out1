@@ -1,16 +1,18 @@
-**** module/scope: moore_sequence_fsm
-     Flip-Flops   : 4
-     Logic Gates  : 62
-     EQUALITY[2]: 6 units
-     MUX[2]: 18 slices
-     LPM[5]: 3 unaccounted
+**** module/scope: three_by_three_bit_multiplier
+     Flip-Flops   : 14
+     Logic Gates  : 195
+     ADDER[6]: 1 units
+     MAGNITUDE[32]: 2 units
+     MUX[2]: 19 slices
+     LPM[6]: 1 unaccounted
      LOG[13]: 2 unaccounted
      LOG[14]: 1 unaccounted
 **** TOTALS
-     Flip-Flops   : 4
-     Logic Gates  : 62
-     EQUALITY[2]: 6 units
-     MUX[2]: 18 slices
-     LPM[5]: 3 unaccounted
+     Flip-Flops   : 14
+     Logic Gates  : 195
+     ADDER[6]: 1 units
+     MAGNITUDE[32]: 2 units
+     MUX[2]: 19 slices
+     LPM[6]: 1 unaccounted
      LOG[13]: 2 unaccounted
      LOG[14]: 1 unaccounted
